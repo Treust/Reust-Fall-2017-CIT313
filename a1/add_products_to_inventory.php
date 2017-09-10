@@ -54,14 +54,15 @@ for ($x=0; $x<=7; $x++) {
 				break;
 			case "v": //veg
 				//create veggie object
-				$produceItem = new veggie($x, $_thisProductName, $thisProductPriceType, $thisProductPrice);
+				$produceItem = new veggie($x, $thisProductName, $thisProductPriceType, $thisProductPrice);
 				$typeType = "Veggie";
 				break;
+						//removed _ in variable line 57
 		}
 
 		if($produceItem->price_type == 2) {
 			$pType = "Each";
-			//added semicolon to end of line 63
+						//added semicolon to end of line 64
 		}
 		else {
 			$pType = "Per Lb";
@@ -95,7 +96,7 @@ session_write_close();
 </p>
 
 <?php
-//removed extra opening body tag
+			//removed extra opening body tag
  ?>
 </body>
 </html>

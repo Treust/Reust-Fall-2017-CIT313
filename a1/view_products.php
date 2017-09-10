@@ -14,9 +14,7 @@
 <title>I've Got A Lovely Bunch of Coconuts: Shop!</title>
 <link type="text/css" rel="stylesheet" href="<?php echo URL_ROOT . '/styles.css' ?>" />
 </head>
-<?php
-	//changed css link line 15
- ?>
+
 <body>
 
 <div id="wrapper">
@@ -35,6 +33,7 @@
 
 
 		for ($x = 0; $x < count($aryProductArray); $x++) {
+					//corrected spelling of variable in line 35
 	?>
     <fieldset>
 		<legend>Product Details</legend>
@@ -66,6 +65,7 @@
     <?php
 
 		}
+				//added closing curly brace line 67
 	?>
 
 

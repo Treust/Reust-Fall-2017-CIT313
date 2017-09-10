@@ -15,7 +15,7 @@
 </head>
 <body>
 <?php
-//moved php closing tag for URL_ROOT
+			//moved php closing tag for URL_ROOT
  ?>
 
 <div id="wrapper">
@@ -61,7 +61,7 @@
 <?php
 
 	}
-//changed to closing curly bracket line 63
+			//changed to closing curly bracket line 63
 	?>
 
 

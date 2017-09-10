@@ -17,14 +17,15 @@ This page is adding each inventory to the inventory array.  Once it's finished, 
 	include_once(ABSOLUTE_PATH . '/classes/veggie_product.class.php');
   include_once(ABSOLUTE_PATH . '/classes/fruit_product.class.php');
 	session_start();
-	//added include_once fruit product class
+				//added include_once fruit product class
 	//unset the current cart array in session and start fresh
 	unset($_SESSION['aryCartArray']);
 
 	$aryCartArray = array();
 
 	//retrieve the inventory array from session
-	$aryProductsArray = unserialize($_SESSION['aryProductArray']);
+	$aryProductArray = unserialize($_SESSION['aryProductArray']);
+				//removed s from aryProductsArray
 
 
 

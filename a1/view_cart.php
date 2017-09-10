@@ -27,16 +27,16 @@
 
 
 	//get the product array stored in session
-	$aryProductsArray = unserialize($_SESSION['aryProductArray']);
-
+	$aryProductArray = unserialize($_SESSION['aryProductArray']);
+					//removed s from aryProductArray line 30
 	//for each item in the cart array, loop through and write out the quantity and item name
 
 	for ($x=0; $x < count($aryCartArray); $x++) {
 
-		$aryCartItemArray = $aryCartArray[$x]};
-		//added closing curly brace after closing bracket line 36
+		$aryCartItemArray = $aryCartArray[$x];
+
 		//find the corresponding product in the product array
-    //added semicolon at end of line 40
+    			//added semicolon at end of line 40
 		$thisProduct = $aryProductArray[$aryCartItemArray[0]];
 
 		echo "<b>" . $thisProduct->product_name . "</b>" . " Qty: " . $aryCartItemArray[1] . "<br />";
