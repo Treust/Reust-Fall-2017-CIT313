@@ -7,7 +7,7 @@ class Controller {
   protected $access;
 
   public function index(){
-    
+
   }
 
 	function __construct($view, $method = null, $parameters = null){
@@ -68,9 +68,7 @@ class Controller {
 	/*
 	*The defaultTask() method is the one run if no task method is run. Here as a placeholder for child classes.
 	*/
-	public function defaultTask(){
 
-	}
 
 
 	/*

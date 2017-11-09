@@ -8,7 +8,6 @@ class ManagePostsController extends Controller{
 
 	public function index() {
 
-
 	}
 
 	public function add(){
