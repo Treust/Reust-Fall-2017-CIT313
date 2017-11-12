@@ -13,8 +13,7 @@ include('views/elements/header.php');?>
     <p><?php echo $u['first_name'];?> <?php echo $u['last_name'];?></p>
     <p><a href="mailto:<?php echo $u['email'];?>"><?php echo $u['email'];?></a></p>
 
-<?php }?>
-
+    <?php }?>
 
 
 </div>
