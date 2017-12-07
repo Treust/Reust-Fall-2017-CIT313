@@ -6,35 +6,18 @@ class CommentsController extends Controller{
 
 	  protected $access = "1";
 
-   	public function comment($commentID){
-        $this->commentObject = new Comment();
-		$Comment = $this->commentObject->getComment($commentID);
-	  	$this->set('Comment',$Comment);
-   	}
+		public function index() {
+			$this->set('task', 'saveComment');
+	    }
 
-	public function index(){
+		public function saveComment(){
 		$this->commentObject = new Comment();
-		$comments = $this->commentObject->getAllComments();
-		$this->set('title', 'The Comment View');
-		$this->set('comments',$comments);
-	}
+		$data = array('uID'=>$_POST['uID'],'commentText'=>$_POST['comment'],'date'=>$_POST['date'],'postID'=>$_POST['pID']);
+		$result = $this->commentObject->addComments($data);
+		$this->set('message', $result);
 
-}
+		}
 
-public function addComment(){
-$this->commentObject = new Comment();
-$this->set('task', 'saveComment');
-}
-
-public function saveComment(){
-$this->commentObject = new Comment();
-$data = array('uID'=>$_POST['uID'],'commentText'=>$_POST['comment'],'date'=>$_POST['date'],'postID'=>$_POST['pID']);
-
-
-//$this->getCategories();
-
-$result = $this->postObject->addComments($data);
-$this->set('message', $result);
 }
 
 ?>
