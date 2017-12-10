@@ -28,17 +28,19 @@ class LoginController extends Controller{
            else {
                header('Location: '.BASE_URL);
            }
-
-
+           else {
+               $this->set('error','awaiting admin approval');
+             }
+           }
+         }
        else {
            $this->set('error','Wrong password / email combination');
        }
 }
-     else {
-         $this->set('error','awaiting admin approval');
 
-   
- }
+
+
+ 
 
 
 
