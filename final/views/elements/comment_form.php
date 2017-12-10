@@ -18,6 +18,6 @@ date_default_timezone_set('America/Indiana/Indianapolis');?>
   <input type="hidden" name="uID" value="<?php echo $uID?>"/>
   <input type="hidden" name="postID" value="<?php echo $pID?>"/>
 
-<button id="submit" type="submit" class="btn btn-primary" >Submit Comment</button>
+<button id="submit" type="submit" class="btn btn-primary" >Get Comments</button>
 </fieldset>
 </form>

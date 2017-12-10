@@ -17,6 +17,9 @@ if( is_array($post) ) {
 
 
     </div>
+    <div>
+    <?php echo $response ?>
+  </div>  
     <div class="row">
         <div class="span8">
 

@@ -15,6 +15,11 @@ class LoginController extends Controller{
 
            $_SESSION['uID'] = $userInfo['uID'];
 
+
+
+           if($userinfo->isActive()) {
+
+
           if(strlen($_SESSION['redirect']) > 0 ) {
               $view = $_SESSION['redirect'];
               unset($_SESSION['redirect']);
@@ -25,14 +30,17 @@ class LoginController extends Controller{
            }
 
 
-
-
-       }
        else {
            $this->set('error','Wrong password / email combination');
        }
 
+     else {
+         $this->set('error','awaiting admin approval');
+
    }
+ }
+
+
 
     public function logout() {
 
